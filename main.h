@@ -21,5 +21,8 @@ typedef struct print
 
 int _printf(const char *format, ...);
 int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int);
+int print_prg(va_list __attibute__((unused)), char *, unsigned int);
+int print_chr(va_list arguments, char *buf, unsigned int ibuf);
+int print_str(va_list arguments, char *buf, unsigned int ibuf);
 
 #endif
